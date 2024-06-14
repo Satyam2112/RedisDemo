@@ -33,7 +33,7 @@ public class UserDao {
     }
     @Cacheable("USER")
     public Map<Object,Object> findAll(){
-        System.out.println("Getting All users :");
+        System.out.println("Getting All users details:");
         return redisTemplate.opsForHash().entries(KEY);
     }
 
